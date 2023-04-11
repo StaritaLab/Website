@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon"> 
+  <meta name="description" content="Dr. Lea Starita's website">
+
+  <title>Team</title>
+
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/css/mbr-additional.css"><link rel="stylesheet" href="assets/css/mbr-additional.css" type="text/css">
+	
+<!-- Lightbox Styling -->
+	<style>
+		.lightbox {
+		display: none;
+		position: fixed;
+		z-index: 999;
+		width: 100%;
+		max-width: 1200px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+		padding: 20px;
+		box-sizing: border-box;}
+
+	.lightbox img {
+		width: 20%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+		max-height: 90vh;
+		object-fit: contain;}
+
+	.lightbox img.clicked {
+		  max-width: 50%;
+		  max-height: 50%;}
+
+	.lightbox .close-btn {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		font-size: 20px;
+		font-weight: bold;
+		color: #000;
+		cursor: pointer;}
+
+	.lightbox-content {
+		display: flex;
+		flex-direction: row;}
+
+	.lightbox-content img {
+		flex: 1;
+		margin-right: 20px;}
+
+	.lightbox-content .caption {
+		flex: 1;}
+
+	.container {
+		display: flex;
+		flex-direction: row;}
+
+	.image-column {
+		flex: 1;
+		max-width: 20%;
+		padding: 5px;}
+
+	.image-column img {
+		width: 100%;
+		padding: 5px;}
+
+	.text-column {
+		flex: 1;
+		max-width: 80%;
+		padding: 20px;}
+	</style>
+</head>
+
+<!-- Navigation Menu -->
+<body>
+  <section data-bs-version="5.1" class="menu cid-tAvacS9RXZ" once="menu" id="menu1-q">
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right navbar-nav-top-padding" data-app-modern-menu="true"><li class="nav-item">
+				<a class="nav-link link text-black display-4" href="index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black display-4" href="team.html">Team</a></li>
+					<li class="nav-item"><a class="nav-link link text-black display-4" href="publications.html">Publications</a></li>
+					<li class="nav-item"><a class="nav-link link text-black display-4" href="index.html">Resources</a></li>
+					<li class="nav-item"><a class="nav-link link text-black display-4" href="index.html">Contact</a></li></ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<!-- GALLERY HEADER AND SUBTITLE, CURRENT MEMBERS -->
+<section data-bs-version="5.1" class="team1 cid-tAvaoHZgcX" id="team1-s">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
+                    <strong>Starita Lab Team</strong></h3>
+                <p class="mbr-section-subtitle mbr-fonts-style align-center mb-5 display-5">
+                    Current Members</p>
+            </div>
+       					
+<!-- GALLERY GRID FOR MEMBERS -->
+<!-- MAIN PAGE INFORMATION -->
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Lea Starita Bio.jpeg" onclick="openLightbox('leaStaritaBio')">
+		</div>
+		<div class="content-wrap">
+		<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+			<strong>Lea Starita</strong></h5>
+			<p><center>Lead PI</center></p>
+		</div>
+	</div>
+</div>
+<div class="lightbox" id="lightbox" >
+	<span class="close-btn" onclick="closeLightbox()">&times;</span>
+<div class = "lightbox-content" id="lightboxContentContainer"></div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Nahum Smith Bio.jpg" onclick="openLightbox('nahumSmithBio')">
+		</div>
+
+	<div class="content-wrap">
+		<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+			<strong>Nahum Smith</strong></h5>
+			<p><center>Lab Manager <br> Saturation Genome Editing</center></p>
+	</div>
+	</div>
+</div>
+	<div class="lightbox" id="lightbox" >
+	<span class="close-btn" onclick="closeLightbox()">&times;</span>
+	<div class = "lightbox-content" id="lightboxContentContainer"></div>
+	</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Peter Han Bio.jpeg" onclick="openLightbox('peterHanBio')">
+		</div>
+
+	<div class="content-wrap">
+		<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+			<strong>Peter Han</strong></h5>
+			<p><center>Lab Manager <br>Pathogen Detection</center></p>
+		</div>
+	</div>
+</div>
+
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Mary O'Neill Bio.jpg" onclick="openLightbox('maryO’NeillBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Mary O’Neill</strong></h5>
+						<p><center>Director <br>Single Cell Genomics</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Jordan Opsahl Bio.png" onclick="openLightbox('jordanOpsahlBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Jordan Opsahl</strong></h5>
+						<p><center>Research Supervisor <br>Pathogen Detection</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Megan Taylor Bio.jpg" onclick="openLightbox('meganTaylorBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Megan Taylor</strong></h5>
+						<p><center>Research Scientist 1<br>Single Cell Genomics (joint w/Shendure Lab)</center></p>
+		</div>
+	</div>
+</div>	
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Anastasia Meleshko Bio.jpg" onclick="openLightbox('anaMeleshkoBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Ana Meleshko</strong></h5>
+						<p><center>Research Scientist 1 <br> Single Cell Genomics</center></p>
+		</div>
+	</div>
+</div>	
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Evan McDermot Bio.jpg" onclick="openLightbox('evanMcDermotBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Evan McDermot</strong></h5>
+						<p><center>Research Scientist 1</center></p>
+		</div>
+	</div>
+</div>	
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Eloise Santa Cruz Bio.jpg" onclick="openLightbox('eloiseSantaCruzBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Eloise Santa Cruz</strong></h5>
+						<p><center>Research Scientist/Engineer 1</center></p>
+		</div>
+	</div>
+</div>	
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Kathryn Barker Bio.jpg" onclick="openLightbox('kathrynBarkerBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Kathryn A. Barker</strong></h5>
+						<p><center>Research Scientist 1</center></p>
+		</div>
+	</div>
+</div>	
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Cameron Wenman Bio.jpg" onclick="openLightbox('cameronWenmanBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Cameron Wenman</strong></h5>
+						<p><center>Research Scientist 1</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Luis Gamboa Bio.jpg" onclick="openLightbox('luisGamboaBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Luis Gamboa</strong></h5>
+						<p><center>Research Scientist 2</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Diana Oday Bio.jpg" onclick="openLightbox('dianaODayBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Diana O’Day</strong></h5>
+						<p><center>Research Scientist 3</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Melinda Wheelock Bio.jpg" onclick="openLightbox('melindaWheelockBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Melinda Wheelock</strong></h5>
+						<p><center>Research Scientist 2</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Obsa Seid Bio.jpg" onclick="openLightbox('obsaSeidBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Obsa Seid</strong></h5>
+						<p><center>Research Scientist 1</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Mason Post Bio.png" onclick="openLightbox('masonPostBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Mason Post</strong></h5>
+						<p><center>Research Scientist 1</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Leslie Rodriguez-Salas Bio.png" onclick="openLightbox('leslieRodriguezSalasBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Leslie Rodriguez-Salas</strong></h5>
+						<p><center>Research Supervisor, Research Scientist 1</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Sarah Heidl Bio.jpg" onclick="openLightbox('sarahHeidl Bio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Sarah Heidl</strong></h5>
+						<p><center>Research Scientist 2</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Riddhiman Gargeriddhiman Bio.jpeg" onclick="openLightbox('riddhimanGargeriddhimanBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Riddhiman Garge</strong></h5>
+						<p><center>Postdoc (joint w/ Shendure Lab)</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Flo Chardon Bio.jpg" onclick="openLightbox('floChardonBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Florence (Flo) Chardon</strong></h5>
+						<p><center>Graduate Student (joint w/ Shendure Lab)</center></p>
+		</div>
+	</div>
+</div>
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Ivan Woo Bio.jpg" onclick="openLightbox('ivanWooBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Ivan Woo</strong></h5>
+						<p><center>Student Assistant</center></p>
+		</div>
+	</div>
+</div>
+
+
+<div class="col-sm-6 col-lg-3">
+	<div class="card-wrap">
+		<div class="image-wrap">
+			<img class="thumbnail" src="assets/images/Team/Audrey Hamm Bio.jpeg" onclick="openLightbox('audreyHammBio')">
+		</div>
+
+<div class="content-wrap">
+					<h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-7">
+						<strong>Audrey Hamm</strong></h5>
+						<p><center>Student Lab Assistant</center></p>
+		</div>
+	</div>
+</div>	
+	
+<!-- Lightbox Content -->
+<div style="display:none;">
+	<div id="lightboxContent_leaStaritaBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Lea Starita Bio.jpeg">
+			<p> Email: <a href="lstarita@uw.edu"> lstarita@uw.edu</a></p>
+			<p> Google Scholars: <a href="https://scholar.google.com/citations?user=t5tfNe8AAAAJ&hl=en"> Lea Starita</a></p>
+		</div>
+			<div class = "text-column">
+				<p>Dr. Starita is a Research Assistant Professor in the Department of Genome Sciences at the University of Washington and the Co-director of Brotman Baty Advanced Technology Lab. She earned her Ph.D. from Harvard Medical School before coming to the University of Washington to train in functional genomics with Stan Fields and Jay Shendure.</p>
+			</div>
+	</div>			
+	<div id="lightboxContent_nahumSmithBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Nahum Smith Bio.jpg">
+			<p> Email: <a href="nahums@uw.edu"> nahums@uw.edu</a></p>
+			<p> Google Scholars: <a href=""> Nahum Smith</a></p>
+		</div>
+		<div class = "text-column">
+			<p>Between applying high throughput techniques to mutational scanning assays and keeping the lab organized, Nahum supports both the Saturation Genome Editing team and Lea’s academic trainees.<br><br>
+			Enthusiastic about baking desserts and building customized keyboards, Nahum can often be found describing his newest cookie adaption or preaching about ergonomics. <br><br>
+			Nahum cares deeply about making science easier for everyone, whether that’s brewing the day’s second pot of coffee or being recruited for a cloning project – some claim he’s the E. coli equivalent of a ‘green thumb’.</p>
+		</div>
+	</div>
+	<div id="lightboxContent_peterHanBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Peter Han Bio.jpeg">
+			<p> Email: <a href="petedhan@uw.edu"> petedhan@uw.edu</a></p>
+			<p> Google Scholars: <a href=""> Peter Han</a></p>
+		</div>
+		<div class = "text-column">
+			<p>Peter Han joined the lab in 2018 with a background in population genetics and wildlife biology from his M.S work at Central Michigan University studying sea lions. <br> <br>
+			With the sudden onset of the COVID-19 Pandemic in 2020, Peter’s role expanded to supervise a larger staff in our clinical-grade research laboratory. Peter coordinates with partner labs to facilitate assays and research into genomics and new molecular technology.<br> <br>
+			When not in the lab or the office Peter spends his time outside with his dog, collecting photos to share on Slack. </p>
+		</div>
+	</div>
+	<div id="lightboxContent_maryO’NeillBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Mary O'Neill Bio.jpg">
+			<p> Email: <a href="oneillmb@uw.edu"> oneillmb@uw.edu</a></p>
+			<p> Google Scholars: <a href="https://scholar.google.com/citations?hl=en&user=lYPYhhoAAAAJ&view_op=list_works&authuser=1&sortby=pubdate"> Mary O'Neill</a></p>
+		</div>
+		<div class = "text-column">
+			<p>Mary is the herder of sciBATS, bridging the wet and dry lab team members and operations. Her interest in infectious diseases and population genetics has taken her to labs around the world and coincidentally expanded her palette. <br> <br> She attributes her success in completing a Ph.D. and postdoc to the cheap, accessible, and delicious ice cream made at the University of Wisconsin - Madison, and the many wines and cheese she encountered while at the Pasteur Institute in Paris, France. She is excited for the aid of one of her first addictions - coffee - in advancing single-cell technologies the sci-team can offer the scientific community of her alma mater and beyond.</p>
+		</div>
+	</div>
+	<div id="lightboxContent_jordanOpsahlBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Jordan Opsahl Bio.png">
+			<p> Email: <a href="opsahlj@uw.edu"> opsahlj@uw.edu</a></p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>A graduate of the University of Washington, Jordan earned her BS in Biology while also pursuing pre-med. Working for several years in medical scribing cultured her interests in pathology and the public’s knowledge of medicine (or lack thereof), which led her to start her research career just as the COVID-19 pandemic began. She now does everything from sample intake to PCR; she additionally wrangles staff, manages space and inventory, and despairs over trying to fit so many freezers in the lab. She often uses the glass on her biohazard hood to practice her drawing and write ideas for new cocktails based on characters in her favorite media.</p>
+		</div>
+	</div>
+	<div id="lightboxContent_meganTaylorBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Megan Taylor Bio.jpg">
+			<p> Email: <a href="megant33@uw.edu"> megant33@uw.edu</a></p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Megan is the liaison between the Shendure Lab and BBI, transferring knowledge at every step into the sci-lab. In the last year, she graduated from UW (2022) with a BS in Molecular, Cellular and Developmental Biology and a minor in Data Science, but her secret talent is making a carrot cake so good even those who don’t like carrots will love it (including herself).</p>
+		</div>
+	</div>
+	<div id="lightboxContent_anaMeleshkoBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Anastasia Meleshko Bio.jpg">
+			<p> Email: <a href="ameleshk@uw.edu"> ameleshk@uw.edu</a></p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Ana recently graduated from Stony Brook University with a BS in Biology and a minor in studio art. By day, she utilizes her biology degree as the quality control queen - if your samples are degraded, she will not let you pass onto a sci-production run. By night, her art minor comes in handy in crocheting, which she does while enjoying some reality TV with her cat.</p>
+		</div>
+	</div>
+	<div id="lightboxContent_evanMcDermotBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Evan McDermot Bio.jpg">
+			<p> Email: <a href="ejm1990@uw.edu"> ejm1990@uw.edu</a></p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Evan earned his B.S. in Neurobiology from the University of Kansas while concurrently exploring an interest in molecular biology. He joined the Starita Lab at the onset of the pandemic after shifting from a specimen collection role with the Seattle Flu Study. With a focus on efficiency and pattern recognition, Evan now plays a leading role in Research & Development for the Flu team; he co-led the development and deployment of a new triple-test assay for SARS-CoV-2, RSV, and influenza. He also supports viral sequencing and data review efforts. <br><br>When he’s not doing science, Evan’s cardiovascular health is being tested by KU basketball or by one of the various sports he plays. He enjoys trivia, Rocket League, heavy music, and visiting different MLB ballparks (35 total so far). Evan strives to make a positive impact on human health and improve the quality of life. He will be a graduate student in the Genome Sciences PhD program at the University of Washington starting Fall 2023.</p>
+		</div>
+	</div>
+	<div id="lightboxContent_eloiseSantaCruzBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Eloise Santa Cruz Bio.jpg">
+			<p> Email: <a href="santae@uw.edu"> santae@uw.edu</p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Eloise earned her B.A. in Biology from Seattle University, with experience in bioinformatics and an interest in Microbiology. She is currently pursuing her Masters degree in Genetic Epidemiology at the University of Washington. Her thesis project is a genomic sequence analysis of SARS-CoV-2 in UW students based on samples collected from Husky Coronavirus Testing and integrating a demographic analysis based on phylogenetic clusters. <br><br> Prior to beginning her graduate school endeavors, she worked as a Research Scientist for the Seattle Flu Study. Her roles consist of accessioning samples, running samples through Swab Express and extraction, as well as performing PCR. While progressing in graduate school, she continues to support the lab as a part-time employee. <br><br>Outside of the lab and graduate school, Eloise enjoys swimming (specifically snorkeling and jumping off cliffs), finding brunch spots around Seattle and can be found running a mile to beat her personal record (4:30!)</p>
+		</div>
+	</div>
+	<div id="lightboxContent_kathrynBarkerBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Kathryn McCaffrey Bio.jpg">
+			<p> Email: <a href="kb79@uw.edu"> kb79@uw.edu</p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Having received a B.S. in Biology, with a focus on genetics and molecular biology from the University of Washington, Kathryn A. Barker is currently a Research Scientist 1 and an aspiring PhD student on the Brotman Baty Institute's Flubats team.  There, she processes specimens for the analysis of viral pathogens, including Covid-19, RSV, and Influenza, and is studying R in order to learn how to better analyze the resulting data.  Fluent in Japanese, she sometimes wonders if learning a coding language qualifies as being trilingual.</p>
+		</div>
+	</div>
+	<div id="lightboxContent_cameronWenmanBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/.jpg">
+			<p> Email: <a href=""> </p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>A recent graduate of the University of Washington’s Bioengineering program, Cameron is passionate about protein design, genetics, and using the design process to meet the needs of a population. Using his design skills, one of Cameron’s design projects included participating in an  interdisciplinary capstone project with HuskyADAPT, which helped to create a head-controlled device to facilitate collaborative play between a 2-year old with cerebral palsy and her older sister. In the Pathogen Detection Lab, Cameron’s responsibilities include specimen processing, lab maintenance, troubleshooting issues with samples, and assisting with lab projects. <br><br> In his personal time, Cameron enjoys adventuring through the outdoors using a variety of means of movement, including skiing, trail running, and thru hiking. For his next outdoor project, Cameron will be training for a 50 mile trail race near Mt. Hood during the summer of 2023.</p>
+		</div>
+	</div>
+	<div id="lightboxContent_luisGamboaBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/.jpg">
+			<p> Email: <a href="gamboal@uw.edu"> gamboal@uw.edu</p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Luis earned a BS in Marine and Conservation Biology from Seattle University. After a year boating through the Puget Sound for Washington Fish & Wildlife, he decided to trade in his life jacket for a lab coat. Luis joined the lab as a specimen processor in April 2020 at the onset of the pandemic. He now leads the OpenArray Assay and viral sequencing work for the lab, aiding the pathogen surveillance efforts for the Seattle Flu Alliance. Whether it's coordinating with partner labs or spending hours over a lab bench, Luis is passionate about doing all he can to provide quality data to all stakeholders. <br><br>While he relishes tracking down specimens, Luis also enjoys going to Seattle Sounders games, watching the year’s Best Picture nominees, and finding cool breweries around the city. </p>
+		</div>
+	</div>
+	<div id="lightboxContent_dianaODayBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Diana Oday Bio.jpg">
+			<p> Email: <a href="diana.oday@gmail.com"> diana.oday@gmail.com</p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Diana is the resident sample processor and master of exploding cells to isolate nuclei for single cell sequencing. She can gender type random fruitflies as they fly around the house, not to mention dissect their tiny brains, thanks to her Doctorate at the Univeristy of Texas. In her spare time, you can find her at McDonald's with her 2 kids.</p>
+		</div>
+	</div>
+	<div id="lightboxContent_melindaWheelockBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Melinda Wheelock Bio.jpg">
+			<p> Email: <a href="mwheeloc@uw.edu"> mwheeloc@uw.edu</p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Though she has an advanced degree in marine biology, Melinda’s experience with molecular techniques brought her to the SGE team last year. Her oceanic expertise is still being put to good use – she is also working on using a marine tunicate (Ciona robusta) as a model organism for deep mutational scanning. After she’s done troubleshooting experiments for the day, she can be found outdoors either hiking or volunteering as a beach naturalist for the Seattle Aquarium.</p>
+		</div>
+	</div>
+	<div id="lightboxContent_obsaSeidBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Obsa Seid Bio.jpg">
+			<p> Email: <a href="obsas@uw.edu"> obsas@uw.edu</p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Obsa comes from a background in Genetics and Cell Biology from Washington State University. He is currently pursuing his Master’s in Data Science from the University of Colorado Boulder online. In the pathogen detection lab, he is responsible for preparing specimens for testing and processing samples for assays in the pathogen detection lab. He returns to Ethiopia every couple of years to volunteer at his brother's pharmacy, where he gained valuable experience and made a difference in the community. In his free time, he writes poetry and has had the opportunity to perform at the 5th Avenue Theater.p>
+		</div>
+	</div>
+	<div id="lightboxContent_masonPostBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Mason Post Bio.png">
+			<p> Email: <a href="mpost@uw.edu"> mpost@uw.edu</p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>In the lab Mason does a lot of gels, PCRs, Quibits, ampures, maxis, DNA extractions, RNA extractions, thawing cells, freezing cells, blasting cells, transfecting cells, selecting cells, washing cells, trypsinizing cells, harvesting cells, replating cells, and making cells green. He also spends time curating and gathering data on clinically relevant genes as potential targets for SGE. He has a near complete collection of the national park quarters. <br><br>He was once very close (~20 feet or so) from being struck by lightning in a park in New Mexico. In his sleep, he grinds his teeth vigorously and goes through a mouthguard about once every couple of years. The most important thing he did in the last year was move from North Carolina to the bustling metropolis of Seattle. He especially cares about riding his bike really far and taking in the sights along the way. </p>
+		</div>
+	</div>
+	<div id="lightboxContent_leslieRodriguezSalasBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Leslie Rodriguez-Salas Bio.png">
+			<p> Email: <a href="rodril2@uw.edu"> rodril2@uw.edu</p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Leslie joined the Pathogen Detection Lab in December of 2020. She graduated from Seattle Pacific University with a degree in BS Biochemistry and the intent of going to medical school.  The onset of the pandemic caused her to take a detour from her path towards medicine and explore the world of research. Prior to joining the lab, Leslie worked as a Medical Scribe. She also made incredible coffee for thousands of tourists as a Barista at the 1st Starbucks in Pike Place Market. She is now a Supervisor that aids in specimen processing and testing, data analysis for Open Array, and maintaining organization for the lab. <br><br>She plans on savoring every last bit of freedom before preparing to apply to medical schools in 2024. Outside the lab, you can find Leslie reading a book, exploring wine bars, or hanging out with her dogs Kona and Kai. </p>
+		</div>
+	</div>
+	<div id="lightboxContent_sarahHeidlBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Sarah Heidl Bio.png">
+			<p> Email: <a href="sheidl@uw.edu"> sheidl@uw.edu</p>
+			<p> Google Scholars: <a href=""> </a></p>
+		</div>
+		<div class = "text-column">
+			<p>Sarah earned her Master’s degree from Sonoma State University, with a focus on population genetics and ecology. In April of 2020, she left her BSL3 job studying tuberculosis to join the Seattle Flu Study at the start of the SARS-CoV-2 pandemic. Her work in the Starita lab focuses on performing validation studies, QA/QC measures to ensure the lab stays in clinical compliance, and laboratory/personnel safety. Outside of work, you can find her sport climbing at local crags, backpacking out in the mountains, or stomping around the woods looking for delicious mushrooms. </p>
+		</div>
+	</div>
+	<div id="lightboxContent_riddhimanGargeriddhimanBio">
+		<div class = "image-column">
+			<img src="assets/images/Team/Riddhiman Gargeriddhiman Bio.jpeg">
+			<p> Email: <a href="rgarge@uw.edu"> rgarge@uw.edu</p>
+			<p> Google Scholars: <a href="https://scholar.google.com/citations?user=ZDxv9l8AAAAJ&hl=en"> Riddhiman Garge</a></p>
+			<p> Twitter: <a href="https://twitter.com/riddhimankg?lang=en"> @riddhimankg</a></p>
+			<p> Mastodon: <a href="https://mastodon.social/@riddhiman_garge"> @riddhiman_garge</a></p>
+		</div>
+		<div class = "text-column">
+			<p>Riddhiman Garge is a joint postdoc between the Shendure and Starita Labs in the Genome Sciences Department. Riddhiman is passionate about deciphering the large-scale organization of cellular systems and how their underlying genetics impact molecular function and/or disease. After earning his Ph.D. in Biochemistry from the University of Texas at Austin in 2021, he joined the Center For Multiplex Assessment of Phenotype (CMAP) where he develops and broadly applies omics based approaches to systematically profile stem cell differentiation and early development.<br><br>Outside the lab, Riddhiman can be found playing drums in various gigs around Seattle. When he is not playing music, Riddhiman can often be found working toward his bucket list goals of visiting all US National Parks (18 so far!) and collecting vinyl records of his favorite musicians. </p>
+		</div>
+	</div>
+</div>	
+
+<script>
+var _currentlightbox = null; 
+	function openLightbox(personName) {
+		var lightboxContentContainer = document.getElementById("lightboxContentContainer");
+		<!-- alert(lightboxContentContainer); -->
+		var lightboxContent = document.getElementById("lightboxContent_" + personName);
+		<!-- alert(lightboxContent); -->
+		lightboxContentContainer.innerHTML = lightboxContent.innerHTML;
+		_currentlightbox = document.getElementById("lightbox");
+		_currentlightbox.style.display = "block";
+	  }
+	function closeLightbox() {
+		_currentlightbox.style.display = "none";
+	  }
+	</script>
+</body>
+</html>
